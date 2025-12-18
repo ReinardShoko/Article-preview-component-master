@@ -1,0 +1,87 @@
+body{
+  align-content: center;
+  font-family: 'Manrope';
+  padding: 2rem;
+  display: flex;
+  font-size: 13px;
+}
+
+@media(min-width: 375px) and (max-width: 1440px){
+  body{
+    background: hsl(210, 46%, 95%);
+  }
+}
+.drawer{
+    margin-left: 50px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50px;
+    background: hsl(210, 8%, 91%);
+    max-width: 875px;
+}
+.drawer-content{
+  flex: 1;
+  position: relative;
+  padding: 1.5rem;
+}
+h2{
+    color: lightslategray;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+p{
+    color: hsl(214, 17%, 51%);
+    display: flex;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.author{
+    display: flex;
+}
+.author-share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.author span {
+  display: flex;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.share-btn {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 150px;
+  background:none;
+}
+
+.share-popup {
+  color:hsl(210, 46%, 95%);;
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  background: hsl(217, 19%, 35%);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.share-popup.hidden {
+  display: none;
+}
+
+.share-popup img {
+  width: 20px;
+  height: 20px;
+}
+.attribution{
+  position: absolute;
+}
